@@ -10,9 +10,10 @@ class Task(models.Model):
     description = models.TextField()
     complete = models.BooleanField(default=False)
     created = models.DateField(auto_now_add = True)
-    # update = models.CharField(max_length = 200)
+    update = models.CharField(max_length = 200)
 
     def __str__(self):
+        # return self.title
         return self.title
     
     class Meta:
